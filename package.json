@@ -1,1 +1,39 @@
-{     "devDependencies": {         "multicast-dns": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-multicast-dns",     "homepage": "https://github.com/npmdoc/node-npmdoc-multicast-dns",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-multicast-dns.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "api documentation for [multicast-dns (v6.1.1)](https://github.com/mafintosh/multicast-dns) [![npm package](https://img.shields.io/npm/v/npmdoc-multicast-dns.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-multicast-dns) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-multicast-dns.svg)](https://travis-ci.org/npmdoc/node-npmdoc-multicast-dns)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "multicast-dns": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-multicast-dns",
+    "keywords": [
+        "documentation",
+        "multicast-dns"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_multicast_dns.js",
+    "name": "npmdoc-multicast-dns",
+    "nameAlias": "npmdoc_multicast_dns",
+    "nameOriginal": "npmdoc-multicast-dns",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-multicast-dns.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
