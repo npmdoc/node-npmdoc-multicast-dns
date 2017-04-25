@@ -1,4 +1,7 @@
-# api documentation for  [multicast-dns (v6.1.1)](https://github.com/mafintosh/multicast-dns)  [![npm package](https://img.shields.io/npm/v/npmdoc-multicast-dns.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-multicast-dns) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-multicast-dns.svg)](https://travis-ci.org/npmdoc/node-npmdoc-multicast-dns)
+# npmdoc-multicast-dns
+
+#### basic api documentation for  [multicast-dns (v6.1.1)](https://github.com/mafintosh/multicast-dns)  [![npm package](https://img.shields.io/npm/v/npmdoc-multicast-dns.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-multicast-dns) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-multicast-dns.svg)](https://travis-ci.org/npmdoc/node-npmdoc-multicast-dns)
+
 #### Low level multicast-dns implementation in pure javascript
 
 [![NPM](https://nodei.co/npm/multicast-dns.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/multicast-dns)
